@@ -39,7 +39,7 @@ public class AccessDpSecondaryProtectionController {
         }
 
         try {
-            response = service.accessProtectionAzureFunction(request, file);
+//            response = service.accessProtectionAzureFunction(request, file);
         }catch (Exception ex){
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(new ByteArrayResource("Upstream processing error. ".getBytes()));
